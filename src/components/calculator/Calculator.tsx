@@ -1,6 +1,5 @@
 'use client'
 
-import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { useCalculator } from '@/hooks/useCalculator'
 import ConfigurationSection from './ConfigurationSection'
 import GeneratorsSection from './GeneratorsSection'
@@ -21,18 +20,10 @@ export default function Calculator() {
 	} = useCalculator()
 
 	return (
-		<div className='w-full max-w-7xl mx-auto space-y-4 xl:h-full xl:flex xl:flex-col'>
-			<Card className='xl:flex-shrink-0'>
-				<CardHeader className='xl:py-4'>
-					<CardTitle className='text-2xl text-center'>
-						Dune: Awakening Base Power Calculator
-					</CardTitle>
-				</CardHeader>
-			</Card>
-
-			<div className='grid grid-cols-1 xl:grid-cols-4 gap-3 min-h-[600px] xl:grid-rows-1 xl:flex-1 xl:min-h-0 xl:w-full'>
+		<div className='w-full max-w-7xl mx-auto'>
+			<div className='grid grid-cols-1 xl:grid-cols-4 gap-3 min-h-[600px] xl:grid-rows-1'>
 				{/* Configuration & Generators Section */}
-				<div className='space-y-3 xl:w-full xl:max-w-none min-w-0 xl:flex xl:flex-col xl:h-full xl:overflow-hidden'>
+				<div className='space-y-3 xl:w-full xl:max-w-none min-w-0'>
 					<ConfigurationSection
 						refineryType={refineryType}
 						timeToPower={timeToPower}
@@ -47,7 +38,7 @@ export default function Calculator() {
 				</div>
 
 				{/* Fuel Requirements Section */}
-				<div className='space-y-6 h-full xl:w-full xl:max-w-none min-w-0 xl:overflow-hidden'>
+				<div className='space-y-6 xl:w-full xl:max-w-none min-w-0'>
 					<FuelRequirementsSection
 						results={results}
 						refineryType={refineryType}
@@ -55,7 +46,7 @@ export default function Calculator() {
 				</div>
 
 				{/* Materials Breakdown Section */}
-				<div className='space-y-6 h-full xl:w-full xl:max-w-none min-w-0 xl:overflow-hidden'>
+				<div className='space-y-6 xl:w-full xl:max-w-none min-w-0'>
 					<MaterialsBreakdownSection
 						results={results}
 						refineryType={refineryType}
@@ -63,7 +54,7 @@ export default function Calculator() {
 				</div>
 
 				{/* Total Raw Materials Summary Section */}
-				<div className='space-y-6 h-full xl:w-full xl:max-w-none min-w-0 xl:overflow-hidden'>
+				<div className='space-y-6 xl:w-full xl:max-w-none min-w-0'>
 					<RawMaterialsSummarySection results={results} />
 				</div>
 			</div>

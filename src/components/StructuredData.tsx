@@ -9,7 +9,7 @@ export function StructuredData({
 	description = 'Calculate power requirements, fuel consumption, and raw materials for powering your Dune base.',
 	url = '/',
 }: StructuredDataConfig = {}) {
-	const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || '/'
+	const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 	const structuredData = {
 		'@context': 'https://schema.org',
@@ -25,8 +25,8 @@ export function StructuredData({
 			priceCurrency: 'USD',
 		},
 		creator: {
-			'@type': 'Organization',
-			name: 'Dune Base Calculator',
+			'@type': 'Person',
+			name: 'Dune Power Calculator',
 		},
 		keywords:
 			'Dune, base calculator, power calculator, power management, fuel consumption, resource planning',

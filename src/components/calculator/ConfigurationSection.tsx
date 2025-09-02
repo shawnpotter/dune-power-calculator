@@ -7,6 +7,7 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from '@/components/ui/select'
+import { Slider } from '@/components/ui/slider'
 
 interface ConfigurationSectionProps {
 	refineryType: string
@@ -20,7 +21,7 @@ export default function ConfigurationSection({
 	timeToPower,
 	onRefineryChange,
 	onTimeToPowerChange,
-}: ConfigurationSectionProps) {
+}: Readonly<ConfigurationSectionProps>) {
 	return (
 		<Card className='xl:flex-shrink-0'>
 			<CardHeader>
@@ -59,15 +60,12 @@ export default function ConfigurationSection({
 					>
 						Time to Power: {timeToPower} Day{timeToPower !== 1 ? 's' : ''}
 					</Label>
-					<input
-						id='timeToPower'
-						type='range'
-						min='1'
-						max='20'
-						value={timeToPower}
-						onChange={(e) => onTimeToPowerChange(parseInt(e.target.value, 10))}
-						className='w-full mt-2 h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer'
-						title='Adjust the time to power in days'
+					<Slider
+						value={[timeToPower]}
+						min={1}
+						max={20}
+						onValueChange={(values) => onTimeToPowerChange(values[0])}
+						className='mt-2'
 					/>
 					<div className='flex justify-between text-xs text-gray-500 dark:text-gray-400 mt-1'>
 						<span>1 day</span>

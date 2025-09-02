@@ -1,16 +1,17 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Space_Mono, Genos } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { StructuredData } from '@/components/StructuredData'
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
+const spaceMono = Space_Mono({
+	variable: '--font-space-mono',
 	subsets: ['latin'],
+	weight: ['400', '700'],
 })
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
+const genos = Genos({
+	variable: '--font-genos',
 	subsets: ['latin'],
 })
 
@@ -89,12 +90,10 @@ export default function RootLayout({
 			<head>
 				<StructuredData />
 			</head>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
+			<body className={`${spaceMono.variable} ${genos.variable} antialiased`}>
 				<ThemeProvider
 					attribute='class'
-					defaultTheme='system'
+					defaultTheme='dark'
 					enableSystem
 					disableTransitionOnChange
 				>

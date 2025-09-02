@@ -1,0 +1,63 @@
+{
+	"SmallChemicalRefinery": {
+		"silicone-block": {
+			"rawResources": {
+				"water": 50,
+				"flour-sand": 5
+			},
+			"yield": 1
+		},
+		"low-grade-lubricant": {
+			"rawResources": {
+				"water": 4,
+				"fuel-cell": 2,
+				"silicone-block": 1
+			},
+			"yield": 5
+		},
+		"industrial-grade-lubricant": {
+			"rawResources": {
+				"water": 15,
+				"fuel-cell": 8,
+				"silicone-block": 4,
+				"spice-residue": 5
+			},
+			"yield": 10
+		}
+	},
+	"MediumChemicalRefinery": {
+		"silicone-block": {
+			"rawResources": {
+				"water": 50,
+				"flour-sand": 3
+			},
+			"yield": 1
+		},
+		"low-grade-lubricant": {
+			"rawResources": {
+				"water": 4,
+				"fuel-cell": 1,
+				"silicone-block": 1
+			},
+			"yield": 5
+		},
+		"industrial-grade-lubricant": {
+			"rawResources": {
+				"water": 15,
+				"fuel-cell": 6,
+				"silicone-block": 4,
+				"spice-residue": 5
+			},
+			"yield": 10
+		},
+		"spice-fuel-cell": {
+			"rawResources": {
+				"water": 200,
+				"fuel-cell": 30,
+				"spice-residue": 65,
+				"irradiated-slag": 3
+			},
+			"yield": 10
+		}
+	}
+}

@@ -1,0 +1,34 @@
+[
+	{
+		"id": "fuel-generator",
+		"name": "Fuel-Powered Generator",
+		"powerOutput": 75,
+		"fuelType": "fuel-cell",
+		"fuelConsumptionRatePerHour": 1,
+		"fuelCapacity": 500
+	},
+	{
+		"id": "omni-turbine",
+		"name": "Wind Turbine Omnidirectional",
+		"powerOutput": 150,
+		"fuelType": "low-grade-lubricant",
+		"fuelConsumptionRatePerHour": 1,
+		"fuelCapacity": 500
+	},
+	{
+		"id": "directional-turbine",
+		"name": "Directional Wind Turbine",
+		"powerOutput": 350,
+		"fuelType": "industrial-grade-lubricant",
+		"fuelConsumptionRatePerHour": 1,
+		"fuelCapacity": 500
+	},
+	{
+		"id": "spice-generator",
+		"name": "Spice-Powered Generator",
+		"powerOutput": 1000,
+		"fuelType": "spice-fuel-cell",
+		"fuelConsumptionRatePerHour": 1,
+		"fuelCapacity": 500
+	}
+]

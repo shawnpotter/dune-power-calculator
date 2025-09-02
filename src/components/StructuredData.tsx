@@ -9,7 +9,7 @@ export function StructuredData({
 	description = 'Calculate power requirements, fuel consumption, and raw materials for powering your Dune base.',
 	url = '/',
 }: StructuredDataConfig = {}) {
-	const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+	const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || '/'
 
 	const structuredData = {
 		'@context': 'https://schema.org',

@@ -25,8 +25,8 @@ export function StructuredData({
 			priceCurrency: 'USD',
 		},
 		creator: {
-			'@type': 'Organization',
-			name: 'Dune Base Calculator',
+			'@type': 'Person',
+			name: 'Dune Power Calculator',
 		},
 		keywords:
 			'Dune, base calculator, power calculator, power management, fuel consumption, resource planning',

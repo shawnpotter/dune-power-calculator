@@ -1,6 +1,6 @@
 # Dune Power Calculator
 
-A comprehensive calculator for managing power requirements, fuel consumption, and raw materials in your Dune base. Optimize and resource gathering and management management with real-time calculations.
+A calculator for managing power requirements, fuel consumption, and raw materials in your Dune base. Optimize and resource gathering and management management with real-time calculations.
 
 ## Features
 
